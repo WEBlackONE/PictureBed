@@ -1,0 +1,1147 @@
+@charset "utf-8";
+* {
+    font-family: "PingFangSC-Thin","Lantinghei SC","Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+body {
+    overflow-x: hidden !important;
+}
+ul{
+    margin-bottom: 10px;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+.index-head{
+	width: 100%;
+	position: relative;
+	background: #273444;
+}
+.index-head .home-head-bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/index_head_bg.png) no-repeat center center /cover;
+	position: absolute;
+	top: 0;
+	opacity: 1;
+}
+.index-head .nav{
+	background-color: transparent;
+	box-shadow: none;
+	border:none;
+	transition: all 0.2s ease-in-out 0s;
+	-moz-transition:all 0.2s ease-in-out 0s;
+	-webkit-transition: 0.2s ease-in-out 0s;
+	-moz-transition: 0.2s ease-in-out 0s;
+}
+.nav .navbar-btn{
+	background-color: rgba(221,221,221,0);
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    color: #ddd;
+    transition: all 0.15s linear 0s;
+    width: 80px;
+    border: 1px solid #ddd;
+    color: #ddd;
+}
+.nav button:hover{
+	background-color: #fff;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    border: 1px solid #404040;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+    color: #ddd;
+}
+.navbar-nav>li{
+	margin-top: 15px;
+}
+.navbar-nav>li:last-child{
+	margin-top: 30px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ddd;
+    transition: all 0.15s linear 0s;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.navbar-default .navbar-toggle:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: none;
+    box-shadow: none;
+}
+.dropdown-toggle .fa {
+    margin-right: 4px;
+}
+.navbar-nav>li:nth-last-child(2){
+	margin-top: 0;
+}
+.navbar-default .navbar-nav > .head-nav-dropdown > a:focus {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	color: #fff;
+}
+.navbar-nav > li > .dropdown-menu{
+	border-radius: 4px;
+}
+/*小指示箭头*/
+.dropdown-arrow {
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    position: absolute;
+    right: 5%;
+    top: -3%;
+    width: 0;
+}
+.benchmark-dropdown {
+    width: 350px;
+}
+.benchmark-dropdown-title {
+    border-bottom: 1px solid #eee;
+}
+.benchmark-dropdown-price-tag {
+    background-color: #2bcd70;
+}
+.benchmark-dropdown-price-tag p {
+    color: #fff;
+    margin-top: 10px;
+}
+.benchmark-dropdown-price-detail {
+    background-color: #2fb467;
+    width: 200px;
+}
+.benchmark-dropdown-price-detail p {
+    color: #fff;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.benchmark-dropdown-content {
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.benchmark-dropdown-intro p {
+    font-size: 10px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.benchmark-dropdown-intro {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.head-slogan{
+    margin-top: 80px;
+}
+.head-slogan h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.head-slogan p{
+    color: rgba(255, 255, 255, 0.8);
+}
+/* 登录表单 */
+.head-form{
+    padding-left: 10px;
+    padding-bottom: 80px;
+    padding-top: 100px;
+}
+.form-wrap{
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    min-height: 365px;
+    overflow: hidden;
+
+}
+.tab-wrap{
+    margin-bottom: 20px;
+}
+.tab-wrap .tab-switcher{
+    border: none;
+    margin: 0 -15px;
+    padding: 0;
+    display: flex;
+    
+}
+.tab-wrap .tab-switcher>li{
+    text-align: center;
+    transition: all 0.15s ease-in-out 0s;
+    list-style: none;
+    width: 50%;
+}
+.tab-wrap .tab-switcher>li a{
+    color: #202020;
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0) linear-gradient(0deg, #ddd, #eee) repeat;
+    color: #202020;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.tab-wrap .tab-switcher .active a{
+    background: #fff none repeat;
+    border-bottom: 1px solid transparent;
+    color: #0076ff;
+}
+.tab-wrap .tab-switcher>li a:hover{
+    color: #0076ff;
+}
+
+#login{
+     transform: translateY(-12px);
+}
+#login .form-group,
+#login button{
+    margin-top: 20px;
+}
+.login-icon figure{
+    width: 60px;
+    height: 60px;
+    background: url(../img/log_auth.png)no-repeat center center/cover;
+}
+.login-decs{
+    margin-bottom: 10px;
+}
+.login-decs h4{
+    color: #404040;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    margin-top:10px;
+}
+.login-decs p{
+    color: #849ab7;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+.intl-tel-input{
+    width: 100%;
+}
+.btn-primary {
+    background: #0076ff linear-gradient(transparent, rgba(0, 0, 0, 0.05)) repeat scroll 0 0;
+    border: medium none;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+    text-shadow: 0 -0.5px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.15s linear 0s;
+}
+.btn-primary:hover{
+    background: #0066dd linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    border: medium none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15); 
+}
+.wechat-login{
+    margin-top: 15px;
+}
+.wechat-login .btn{
+    background: #e5f6ff;
+    border: 1px solid #0076ff;
+    border-radius: 20px;
+    color: #0076ff;
+    display: inline-block;
+    padding: 4px 10px;
+    transition: all 0.15s linear 0s;
+}
+.pwd-forget{
+    bottom: 2.5%;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 2%;
+}
+.head-form-sm{
+    padding-bottom: 0.5em;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+.head-form-sm .xs-signup{
+    background: #fff;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    color: #404040;
+    margin-bottom: 1em;
+}
+.head-form-sm .xs-login{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.head-form-sm .xs-login:hover{
+    color: #000;
+}
+/* 窄框显示价格条 */
+.head-pricebar{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 0;
+    padding-top: 0.5em;
+}
+.head-pricebar p{
+    color: #fff;
+}
+.head-pricebar p .label{
+    margin-right: 0.5em;
+}
+/*modal框*/
+._we_qrcode{
+    margin-bottom: 15px;
+}
+.modal-dismiss{
+    background-color: #0076ff;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.15) ;
+}
+.modal-dismiss .modal-dismiss-btn{
+    color: #ffffff;
+    
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#signup{
+    padding-top: 15px;
+}
+/* 收益矿池 */
+.income-poor{
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: 1px solid #fff;
+  margin-right: 0;
+}
+.income-poor .poor-link{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out 0s;
+}
+/* 窄频显示利率 */
+.site-interest{
+    background: #FFF6D0;
+    padding-top: 4px;
+}
+.site-interest figure{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url("../img/interest.png");
+    background-size: contain; /* background-size: contain 只要宽度要么高有一个满足要求就可以*/
+}
+.site-interest p{
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    color: #CD9A00;
+    margin-left: -8px;
+}
+/* 最新消息部分 */
+.site-news{
+    background: #f5f5f5;
+}
+.site-news .news-wrap{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.site-news .news-content-warp{
+    padding-right: 5px;
+}
+.site-news .news-content{
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px 30px 30px;
+    transition: all 0.15s linear 0s;
+}
+
+.site-news .news-content .content-title{
+    background: #0076ff none repeat scroll 0 0;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 118, 255, 0.5);
+    color: #fff;
+    margin-left: -50px;
+    padding: 6px 20px;
+    text-shadow: 0 -0.5px 0 rgba(0, 0, 0, 0.3);
+    transform: translate(-39px, 10px);
+}
+.site-news .news-content .content-more{
+    background: #0076ff none repeat scroll 0 0;
+    border-top-right-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    margin-right: -30px;
+    margin-top: -25px;
+    padding: 10px 20px;
+    text-shadow: 0 -0.5px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.site-news .news-content .content-head{
+    margin-bottom: 20px;
+}
+.site-news .content-body p{
+    font-size: 1.5rem;
+    line-height: 27px;
+}
+.site-news .content-body p a{
+    display: inline-block;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #273444;
+    transition: all 0.15s ease 0s;
+}
+.site-news .content-body .content-time{
+    color: #849ab7;
+    font-size: 1rem;
+    opacity: 0.5;   
+ } 
+.site-news .news-sidebar-wrap{
+    padding-left: 0;
+}
+.site-news .sidebar-content{
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+}
+.site-news .sidebar-content img{
+    width: 100%;
+}
+.site-news .news-content:hover,
+.site-news .sidebar-content:hover{
+    box-shadow: 0 2px 15px rgba(0,0,0,.1);    
+}
+
+.site-news .content-body p a:hover{
+    color: #0076ff;
+}
+.site-news .content-body p a:hover:before {
+    width: 4px;
+    height: 14px;
+    display: inline-block;
+    content: '';
+    background: #0076ff;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -8px;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
+}
+/*  btc钱包介绍 */
+.site-btcwallet-intro {
+    padding-top: 4em;
+    padding-bottom: 4em; 
+}
+.btcwallet-item{
+        margin-top: 5em; 
+}
+.site-btcwallet-intro .btcwallet-list h2 {
+    font-size: 1.5em;
+    color: #202020;
+    margin-top: 0;
+    letter-spacing: 0.5px; 
+}
+.site-btcwallet-intro .btcwallet-list p {
+    font-size: 0.9em;
+    color: #808080;
+    letter-spacing: 0.5px; 
+}
+/* 安全和价格 */
+.site-security-intro{
+    position: relative;
+    height: 600px;
+    padding-right: 0;
+}
+.site-security-intro .row{
+    margin-left: 0;
+}
+.site-security-intro .security-main{
+    position: absolute;
+    top: 1em;
+    left: 10%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
+    -webkit-animation: floatSecurityMain 3s linear infinite alternate; 
+    animation: floatSecurityMain 3s linear infinite alternate; 
+}
+.site-security-intro .security-main h2{
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+.site-security-intro .security-main h5{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.site-security-intro .security-main  p{
+    color: #849AB7;
+    font-size: 0.9em;
+    margin-bottom: 3em;
+}
+.security-intro-btn{
+    border-radius: 20px;
+    border: 1px solid #2FA8E5;
+    color: #2FA8E5;
+    transition:all 0.15s linear;
+}
+.security-intro-btn:hover{
+    background: #2FA8E5;
+    color: #FFF;
+}
+.security-pricebar{
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 20em;
+    right: -200%;
+    border: 1px solid #0076FF;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.security-pricebar .security-pricebar-body{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(top, #AA76FF, #2781FF);
+    background: linear-gradient(180deg, #AA76FF, #2781FF); 
+}
+.security-pricebar-body p{
+    color: #eee;
+    font-size: 0.75em;
+}
+.security-pricebar-body h3{
+    color: #fff;
+    font-size: 1.25em;
+}
+.security-pricebar-footer{
+    padding-top: 10px;
+    padding-left: 8px;
+}
+.site-flow-bg{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+.site-flow-bg .site-flow-bg-content{
+    opacity: 1;
+    background: url("../img/index-intro-team.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+}
+/* 产品介绍 */
+.site-product-intro{
+    background-color: #f5f5f5;
+    padding: 6em 4em 8em;
+}
+.site-product-intro .product-header h3{
+    color: #404040;
+    margin-bottom: 3em;
+}
+.product-content{
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 2em;
+}
+.product-content a{
+    background-color: #fff;
+    display: block;
+    padding: 4em 2em;
+    text-align: center;
+    transition: all 0.15s ease-out 0s;
+}
+.product-content a:hover{
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
+    margin-top: -10px;
+    text-decoration: none;
+}
+.product-content img{
+    margin-bottom: 2em;
+}
+.product-content a p{
+    color: #404040;
+    font-size: 1em;
+    margin-top: 2em;
+}
+/* 用户评价 */
+.site-comments{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.site-comments .comments-content p{
+    font-size: 0.9em;
+color: #404040;
+letter-spacing: 0.5px;
+}
+/* 媒体评价 */
+.site-mediaReports{
+    padding-top: 6em;
+    padding-bottom: 6em;
+    padding-left: 4em;
+    padding-right: 4em;
+    background: -webkit-linear-gradient(#6D7887, #384143);
+    background: -o-linear-gradient(#6D7887, #384143);
+    background: linear-gradient(#6D7887, #384143);
+}
+.site-mediaReports .mediaReports-content{
+    min-height: 250px;
+}
+.site-mediaReports .mediaReports-content p{
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.8px;
+}
+.site-mediaReports .mediaReports-content a{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.site-mediaReports .mediaReports-media{
+    color: #fff;
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid #fff;
+}
+/* 联系方式 */
+.site-contact{
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+.site-contact .contact-desc{
+    color: #849AB7;
+    letter-spacing: 0.8px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.site-contact .contact-desc a{
+    color: #0076ff;
+}
+.site-contact .contact-content p{
+    margin-top: 2em;
+    letter-spacing: 1.5px;
+}
+/* 底部注册 */
+.site-register{
+    padding-top: 12em;
+    padding-bottom: 16em;
+    background: url("../img/site-register-bg.jpg") no-repeat center center /cover;
+}
+.site-register p{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 2em;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+.site-register .register-btn{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.25em;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+}
+.site-register .register-btn:hover{
+    background-color: #fff;
+    color: #0076FF;
+}
+/* 友情链接 */
+.site-links{
+    background-color: #f8f8f8;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.site-links .links-head{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #808080;
+}
+.site-links .links-content{
+    margin-bottom: 10px;
+}
+.site-links .links-content a{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #808080;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 6px;
+}
+.site-links .links-content a:hover{
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-decoration: none;
+}
+/* 窗口固定定位部分 */
+.fixed-forum{
+    position: fixed;
+    top: 60%;
+    left: 0;
+}
+.fixed-help-panel{
+     position: fixed;
+    bottom: 0%;
+    right: 10%;
+    widows: 500px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    overflow: hidden;
+    -webkit-transform: translateY(160px);
+    transform: translateY(160px);     
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    z-index: 3;
+}
+.fixed-help-panel:hover{
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+}
+.fixed-help-panel .help-panel-head{
+    color: #fff;
+    background-color: #0076FF;
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fixed-help-panel .help-panel-head p{
+    font-size: 1.6rem;
+}
+.fixed-help-panel .help-panel-body li{
+     font-size: 1.5rem;
+}
+.fixed-help-panel .help-panel-body a{
+    display: block;
+    color: #0076FF;
+    line-height: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+.fixed-help-panel .help-panel-body a:hover{
+    background: #e5f6ff;
+    text-decoration: none;
+}
+.fixed-help-panel .help-panel-body .support{
+    margin-right: 10px;
+    line-height: 44px;
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+.fixed-help-panel .help-panel-body .support-online{
+    background: url("../img/support_online.png") center center /cover;
+}
+.fixed-help-panel .help-panel-body .support-qq{
+    background: url("../img/support_qq.png") center center /cover;
+}
+.fixed-help-panel .help-panel-body .support-tel{
+    background: url("../img/support_phone.png") center center /cover;
+}
+.fixed-help-panel .help-panel-body a code{
+    color: #0076FF;
+    background: #E5F6FF;
+}
+/**************************footer ****************************/
+.common-footer{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.footer-content dt{
+    color: #606060;
+    font-size: 1.3em;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.footer-content dd{
+    color: #849ab7;
+    font-size: 1em;
+    line-height: 3rem;
+}
+.footer-content dd a{
+    color: #849ab7;
+}
+.footer-content .badge-blue{
+    background: #0076FF;
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    text-shadow: 0 -0.5px 0 rgba(0, 0, 0, 0.3);
+    margin-left: 2px;
+}
+.common-footer .content-link{
+    color: #2F95E5;
+    font-size: 2.5rem;
+    margin-left: 10px;
+    margin-top: 2rem;
+    margin-right: 10px;
+    display: inline-block;
+}
+.common-footer .footer-ft{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: 0.75em;
+    margin-top: 1.5rem;
+}
+.common-footer .footer-ft p{
+    color: #bababa;
+    font-size: 1em;
+}
+.common-footer .footer-ft p:nth-child(2) a{
+   margin-left: 2em;
+    color: #849AB7; 
+}
+.common-footer .footer-ft p:last-child a{
+    margin-left: 5px;
+    display: inline-block;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    color: #849AB7; 
+}
+.common-footer select{
+    position:absolute;
+    right: 5%;
+    color: #404040;
+    border: 1px solid #B6B6B6;
+}
+.common-footer .select-lang{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 1em;
+    padding-right: 1.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: url("../img/select-arrow.png") no-repeat;
+    background-position: 92% 50%;
+    background-size: 6px 6px;
+    color: #8E9CA4;
+}
+/* bootstrap网格系统媒体查询 */
+/*  @media screen and (min-width: 768px) and (max-width: 992px){
+
+} */
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .site-btcwallet-intro > h2 {
+        font-size: 1.5em; 
+    }
+    .btcwallet-item{
+        margin-top: 2em;
+    }
+    .site-btcwallet-intro .btcwallet-list h2{
+        font-size: 1.2em;
+    }
+    .site-btcwallet-intro .btcwallet-list p {
+        font-size: 0.9em;
+        color: #808080;
+        letter-spacing: 0.5px; 
+    } 
+
+} 
+@media screen and (min-width: 1200px){
+    .site-news{
+        background: #f5f5f5;
+    }
+    .site-news .news-wrap{
+     padding-top: 80px;
+     padding-bottom: 80px;
+    }
+    .site-news .news-content-warp{
+        padding-right: 5px;
+    }
+    .site-news .news-content{
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 25px 30px 30px;
+        transition: all 0.15s linear 0s;
+    }
+
+    .site-news .news-content .content-title{
+        background: #0076ff none repeat scroll 0 0;
+        border-radius: 20px;
+        box-shadow: 0 1px 10px rgba(0, 118, 255, 0.5);
+        color: #fff;
+        margin-left: -50px;
+        padding: 6px 20px;
+        text-shadow: 0 -0.5px 0 rgba(0, 0, 0, 0.3);
+        transform: translate(-39px, 10px);
+    }
+    .site-news .news-content .content-more{
+        background: #0076ff none repeat scroll 0 0;
+        border-top-right-radius: 6px;
+        color: #fff;
+        display: inline-block;
+        margin-right: -30px;
+        margin-top: -25px;
+        padding: 10px 20px;
+        text-shadow: 0 -0.5px 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+    .site-news .news-content .content-head{
+        margin-bottom: 20px;
+    }
+    .site-news .content-body p{
+        font-size: 1.5rem;
+        line-height: 27px;
+    }
+    .site-news .content-body p a{
+        display: inline-block;
+        max-width: 600px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #273444;
+        transition: all 0.15s ease 0s;
+    }
+    .site-news .content-body .content-time{
+        color: #849ab7;
+        font-size: 1rem;
+        opacity: 0.5;   
+    } 
+    .site-news .news-sidebar-wrap{
+        padding-left: 0;
+    }
+    .site-news .sidebar-content{
+        display: block;
+        border: 1px solid #eee;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        -webkit-transition: 0.15s linear;
+        transition: 0.15s linear;
+    }
+    .site-news .sidebar-content img{
+        width: 100%;
+    }
+    .site-news .news-content:hover,
+    .site-news .sidebar-content:hover{
+        box-shadow: 0 2px 15px rgba(0,0,0,.1);    
+    }
+
+    .site-news .content-body p a:hover{
+        color: #0076ff;
+    }
+    .site-news .content-body p a:hover:before {
+        width: 4px;
+        height: 14px;
+        display: inline-block;
+        content: '';
+        background: #0076ff;
+        border-radius: 4px;
+        position: absolute;
+        margin-top: 7px;
+        margin-left: -8px;
+        -webkit-transition: 0.1s linear;
+        transition: 0.1s linear;
+    }
+        .site-news .content-body p a {
+        display: inline-block;
+        max-width: 600px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } 
+    /* btc钱包介绍 */
+    .site-btcwallet-intro{
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .site-btcwallet-intro .btcwallet-item{
+        margin-top: 5em;
+    }
+    .site-btcwallet-intro .btcwallet-list h2{
+        color: #202020;
+        font-size: 1.5em;
+        letter-spacing: 0.5px;
+        margin-top: 0;
+    }
+    .site-btcwallet-intro .btcwallet-list p{
+        color: #808080;
+        font-size: 0.9em;
+        letter-spacing: 0.5px;
+    }  
+}
+@media screen and (min-width: 500px) and (max-width: 1199px) {
+    .site-news .content-body p a {
+        display: inline-block;
+        max-width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+}
+@media screen and (max-width: 768px) {
+  .site-news .news-sidebar-wrap {
+    padding-left: 15px;    
+    }
+    .site-news .news-content-warp{
+        padding-right: 15px;
+    }
+    .news-sidebar{
+        margin-top: 10px;
+    }
+    .site-news .news-wrap{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .site-news .content-body p {
+        font-size: 1.2rem; 
+    }
+    /* btc钱包介绍 */
+   .site-btcwallet-intro {
+     padding-bottom: 1em; 
+    }
+    .site-btcwallet-intro h2 {
+        font-size: 1.2em; 
+    }
+    .site-btcwallet-intro .btcwallet-item{
+        margin-top: 0;
+    }
+    .site-btcwallet-intro .btcwallet-item-decs {
+        margin-top: 2em; 
+    }
+    .site-btcwallet-intro .btcwallet-item h2 {
+        font-size: 1.5em; 
+    }
+    .site-btcwallet-intro .btcwallet-list {
+        margin-top: 0; 
+    }
+     .btcwallet-item img {
+         margin-top: 1.8em; 
+     } 
+     /* 安全和价格 */
+     .site-security-intro .security-main{
+        margin-left: -4em;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        padding-right: 4em;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        box-shadow: none;
+        -webkit-animation: none;
+        animation: none;
+     }
+     /* 用户评价 */
+    .site-comments{
+        margin-top: 10em;
+        margin-bottom: -2em;
+    }
+    .site-comments .comments-content img{
+        width: 80px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /* CSS3居中对齐方式 */
+     }
+    .site-comments .comments-content .comments-content-decs{
+        margin-top: 4em;
+        margin-bottom: 4em;
+        background: #E5F6FF;
+        z-index: -1;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;  
+    }
+    /* 媒体报道 */
+    .site-mediaReports{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .site-mediaReports .mediaReports-content{
+        min-height: 200px;
+    }
+    .site-mediaReports .mediaReports-media{
+        margin-bottom: 2em;
+    }
+    /* 底部注册 */
+    .site-register p{
+        font-size: 1.5em;
+    }
+    /* footer部分 */
+    .common-footer .footer-wrap{
+        padding: 3em;
+    }
+}
+/**************************CSS3动画 ****************************/
+@-webkit-keyframes floatSecurityMain {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+ /50% {
+   -webkit-transform: translateY(-15px);
+   transform: translateY(-15px); } 
+  100% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px); } }
+@keyframes floatSecuritMain {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+ 50% {
+   -webkit-transform: translateY(-15px);
+   transform: translateY(-15px); } 
+  100% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px); } }

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>demo HaoBTC—好比特币钱包: 使用比特币第一平台</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--引入font-awesome字体图标-->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="shortcut icon" href="img/favicon.icon.png" />
+		<!--<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>-->
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<!--引入国际电话输入插件intlTelInput.js插件-->
+		<link rel="stylesheet" href="intlTelInput/intlTelInput.css" />
+		<script type="text/javascript" src="intlTelInput/intlTelInput.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>	
+		<div class="index-head">
+			<figure class="home-head-bg"></figure>
+			<nav class="nav navbar  navbar-default  navbar-fixed-top">
+				<div class="container">
+						<!--bootstrap响应式菜单-->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#index-nav-collapse">
+							<span class="sr-only">响应式导航栏</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/">
+							<img alt="haobtc_logo" src="img/logo.png" scroll-src="img/logo_scroll.png" title="好比特币-市场份额第一的比特币钱包" width="125">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="index-nav-collapse">
+						<ul class="nav navbar-nav  navbar-right">
+								<!--bootstrap下拉菜单-->
+							<li class="dropdown head-nav-dropdown hidden-xs">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+									了解更多
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<div class="dropdown-arrow"></div><!--一个指示的小箭头-->
+									<li>
+										<a href="#" target="_blank">资产透明</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">好比特币矿池</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">团队介绍</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">联系我们</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">常见问题</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">标志</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">媒体报道</a>
+									</li>
+								</ul>
+							</li>		
+							<li class="dropdown head-nav-dropdown hidden-sm hidden-xs">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+									<i class="fa fa-exchange"></i>
+										买入
+									<span id="id_buy_btc_nav">6813.00</span>
+										/卖出
+									<span id="id_sell_btc_nav">6724.00</span>
+								</a>
+								<ul class="dropdown-menu benchmark-dropdown">
+									<div class="dropdown-arrow"></div>
+									<div class="benchmark-dropdown-title">
+										<img class="center-block" src="img/benchmark-dropdown.png" height="36px" width="240px">
+										
+									</div>
+									<div class="benchmark-dropdown-content">
+										<div class="row benchmark-dropdown-content-price">
+											<div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1 benchmark-dropdown-price-tag">
+												<p class="text-center">买入</p>
+											</div>
+											<div class="col-md-8 benchmark-dropdown-price-detail">
+												<p>
+													￥
+													<span id="id_buy_btc_price">6793.00</span>
+													<span class="pull-right">
+														<i id="id_buy_arrow" class="fa fa-long-arrow-up"></i>
+															每比特币
+													</span>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="benchmark-dropdown-content">
+										<div class="row benchmark-dropdown-content-price">
+											<div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1 benchmark-dropdown-price-tag">
+												<p class="text-center">卖出</p>
+											</div>
+											<div class="col-md-8 benchmark-dropdown-price-detail">
+												<p>
+													￥
+													<span id="id_buy_btc_price">6704.00</span>
+													<span class="pull-right">
+														<i id="id_buy_arrow" class="fa fa-long-arrow-up"></i>
+															每比特币
+													</span>
+												</p>
+											</div>
+											</div>
+									</div>
+									<div class="benchmark-dropdown-intro">
+										<p>* HaoBTC 标准价格即为最终成交价，风险均由HaoBTC风控模型承担。</p>
+										<p>* 三十币一价 (单笔交易30 BTC 都是一个价格)</p>
+										<a href="/common/benchmark_price_desc">
+											<p>
+												了解 HaoBTC™ Benchmark Price
+												<i class="fa fa-question-circle"></i>
+											</p>
+										</a>
+									</div>
+									
+								</ul>
+							</li>
+							<li>
+								<a href="#" >区块浏览器</a>
+							</li>
+							<li>
+								<a href="#" >登录</a>
+							</li>
+							<li>
+								<a href="#">
+									<button class="btn navbar-btn btn-primary">注册</button>
+								</a>
+							</li>
+							<li>
+								<select id="lang-select-nav" class="_lang__">
+									<option value="zh-hans">中文</option>
+									<option disabled value="en">ENG</option>
+									<option disabled value="ru">RUS</option>
+								</select>	
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container head-form">
+				<!--外部包裹层-->
+				<div class="head-form-lg row hidden-xs">
+					<div class="col-md-4 head-slogan hidden-sm">
+						<h1>我们让比特币更好用</h1>
+						<p>市场份额第一的比特币钱包</p>
+					</div>
+					<div class="form-wrap col-md-3 col-md-offset-5">
+						<div class="tab-wrap">
+							<ul class="tab-switcher">
+								<li target="#login"><a href="javascript:;">登录</a></li>
+								<li target="#signup"><a href="javascript:;">注册</a></li>
+							</ul>
+						</div>
+						<div class="forms">
+						<!--登录表单-->
+						<form id="login" action="#" method="post">
+						<div class="col-md-4 col-sm-6 login-icon">
+              				<figure></figure>
+            			</div>
+            			<div class="col-md-8 col-sm-6 login-decs">
+              				<h4>安全登录</h4>
+              				<p>我们保障您的安全.</p>
+            			</div>
+            			<div class="form-group">
+            				<!--引入intlTelInput插件-->
+            				<input id="login_account" class="form-control" type="text" name="login"  placeholder="请输入您的邮箱或手机号码" />
+            			</div>
+            			<div class="form-group">
+            				<input id="login_password" class="form-control" type="password" name="password"  placeholder="请输入您的密码" />
+            			</div>
+            			<button class="btn btn-primary btn-block btn-lg" type="submit">登录</button>
+            			<div class="wechat-login">
+            				<!--引用bootstrap模态框插件-->
+            				<a class="btn btn-default" data-toggle="modal" data-target="#wechat-login-modal">
+            					<i class="fa fa-wechat"></i>
+            					微信登录
+            				</a>
+            			</div>
+            			<a class="pwd-forget" href="#">忘记密码?</a>
+						</form>
+						<!--引入bootstrap modal框-->
+						<div id="wechat-login-modal" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4  class="modal-title">微信登录</h4>
+								</div>
+								<div class="modal-body">
+									<div class="_wx_">
+										<img src="img/showqrcode.jpg" class="_we_qrcode center-block" width="160" height="160"/>
+										<p class="text-center">
+											<i class="fa fa-wechat fa-2x"></i>
+										</p>
+										<p class="text-center">
+											使用您的微信app扫描二维码
+										</p>
+										<p class="text-center">
+											<a class="label label-danger ">												
+              									微信登录超时, 请刷新二维码
+              									<i class="fa fa-refresh"></i>
+											</a>
+										</p>
+									</div>
+								</div>
+								<div class="modal-footer modal-dismiss">
+									<a	class="modal-dismiss-btn center-block" data-dismiss="modal">
+										<i class="fa fa-qrcode"></i>
+										通过微信app扫描二维码         
+									</a>
+								</div>
+							</div>
+						</div>
+						</div>
+						<!-- 注册表单 -->
+						<form id="signup" action="#" method="post">
+						<div class="form-group">
+							<input id="signup_account" class="form-control" type="tel" name="account" placeholder="你的手机号码"></input>
+						</div>
+						<div class="form-group">
+							<input id="signup_pwd" class="form-control" name="password" placeholder="请输入你的密码,最少10位" type="password">
+						</div>
+						<div class="form-group">
+						<input id="confirm_pwd" class="form-control" name="confirm_password" placeholder="再次确认你的密码" type="password">
+						</div>
+						<button class="signup-btn btn btn-primary btn-block btn-lg">创建新账号</button>
+						</form>
+						</div>
+					</div>
+				</div>
+				<div class="head-form-sm row visiable-xs">
+					<div class="col-md-12">
+						<a class="btn btn-lg center-block xs-signup" href="#">注册</a>
+						<a class="btn btn-lg center-block xs-login" href="#">登录</a>
+					</div>
+				</div>
+			</div>
+			<div class="head-pricebar row visiable-xs">
+				<div class="col-xs-6">
+					<p class="text-center">
+						<span class="label label-success">买入</span>
+							￥
+						<span class="index-pricebar-buy">7343.00</span>
+							/ BTC
+					</p>
+				</div>
+				<div class="col-xs-6">
+					<p class="text-center">
+						<span class="label label-success">卖出</span>
+							￥
+						<span class="index-pricebar-buy">7300.00</span>
+							/ BTC
+					</p>
+				</div>
+			</div>		
+			<div class="income-poor row">
+				<div class="col-md-12 text-center">
+					<a href="#" class="poor-link">
+						103%PPS收益的矿池！了解更多         
+						<i class="fa fa-chevron-right"></i>
+					</a>
+				</div>
+			</div>	
+		</div>
+		<div class="alert alert-danger text-center">
+				风险提示：比特币不由货币当局发行，不具有法偿性与强制性，具有极高的价格波动风险，请在风险自担的前提下谨慎投资。    
+		</div>
+		<!-- 窄频显示利率 -->
+		<div class="site-interest visible-xs row">
+			<div class="col-xs-3">
+				<figure class="pull-right"></figure>
+			</div>
+			<div class="col-xs-9">
+				<p>
+					月账户年化利率最高 6.01%，逐月递增
+					<i class="fa fa-line-chart"></i>
+				</p>
+			</div>
+		</div>
+		<!-- 宽频展示最新消息 -->
+		<div class="site-news container-fluid">
+			<div class="news-wrap container">
+				<div class="row">
+					<div class="news-content-warp col-md-9">
+						<div class="news-content">
+							<div class="content-head">
+								<span class="content-title">最新资讯</span>
+								<a class="content-more pull-right" href="#">
+									更多
+									<i class="fa fa-chevron-right"></i>
+								</a> 
+							</div>
+							<div class="content-body"> 
+								<p>
+									<a href="#">
+										【内盘期货黑色系尾盘跳水】焦煤涨幅由5%大幅收窄至1.1%；焦炭由涨超4%转为下跌。铁矿石现跌2.35%，螺纹钢现跌0.73%。
+									</a>
+									<span class="content-time pull-right">2017-02-16-14:50</span>
+								</p>
+								<p>
+									<a href="#">
+										【界面：监管层考虑再融资募集投向不能涉及类金融业务】业内流传的与监管层就最新再融资（非公开）政策变化沟通纪要显示，拟再融资公司若存在持有大额金融资产、主营业务亏损等问题，不会直接导致被拒，但会更多采用一事一议的实质性审核方式。上市公司使用募集资金理财也有可能会成为再融资障碍。此外，前次募投如果发生变更，不鼓励变更为收购项目。
+									</a>
+									<span class="content-time pull-right">2017-02-16-14:10</span>
+								</p>
+								<p>
+									<a href="#">
+										【提醒】日内请重点关注：
+											① 20:30 欧洲央行公布货币政策会议纪要
+											② 21:30 美国1月新屋开工、营建许可、2月11日当周首次申请失业救济人数以及费城联储制造业指数
+											③ 次日04:10 美联储Williams在旧金山谈论金融科技
+									</a>
+									<span class="content-time pull-right">2017-02-16-12:29</span>
+								</p>
+								<p>
+									<a href="#">
+										路透称中国到期TLF未续做，今日有约6000亿TLF操作到期。
+									</a>
+									<span class="content-time pull-right">2017-02-16-11:06</span>
+								</p>
+								<p>
+									<a href="#">
+										网易援引媒体称，证监会计划推出限制再融资政策，计划限制再融资频率和规模。
+									</a>
+									<span class="content-time pull-right">2017-02-16-11:06</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="news-sidebar-wrap col-md-3 hidden-sm">
+						<div class="news-sidebar">
+							<div class="sidebar-content">
+								<a class="sidebar-content-pic" href="#">
+									<img src="img/news_sidebar_top.png" alt="标准算力" />
+								</a>
+							</div>
+							<div class="sidebar-content">
+								<a class="sidebar-content-pic" href="#">
+									<img src="img/news_sidebar_down.png" alt="标准算力" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- btc钱包介绍 -->
+		<div class="site-btcwallet-intro container">
+			<h2 class="text-center">
+				最专业的比特币钱包
+			</h2>
+			<div class="btcwallet-list">
+				<div class="row btcwallet-item">
+					<div class="col-sm-6">
+						<div class="col-xs-4">
+							<img class="center-block" src="img/btcwallet_storage.png" alt="storage" width="80" />
+						</div>
+						<div class="btcwallet-item-decs col-xs-8">
+							<h2>存币有息</h2>
+							<p>您存在好比特币的每一笔资产（保险箱业务除外）都将给您带来丰厚的利息回报，这部分收益来自好比特币的自建矿场。
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="col-xs-4">
+							<img class="center-block" src="img/btcwallet_quick_transfer.png" alt="storage" width="80" />
+						</div>
+						<div class="btcwallet-item-decs col-xs-8">
+							<h2>快速转账</h2>
+							<p>
+							作为钱包，对速度的极致追求，是我们工程师孜孜不倦改进每一步骤的动力。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row btcwallet-item">
+					<div class="col-md-6">
+						<div class="col-xs-4">
+							<img class="center-block" src="img/btcwallet_purchase.png" alt="storage" width="80" />
+						</div>
+						<div class="btcwallet-item-decs col-xs-8">
+							<h2>一键买卖</h2>
+							<p>得益于我们工程师的惊人成就，是时候跟繁琐的买币流程说再见了。极速充值到帐，一键即可买卖比特币。 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 安全和价格 -->
+		<div class="site-security-intro container">
+			<div class="row container">
+				<div class="col-md-8  col-xs-12">
+					<div class="security-main col-md-10 col-xs-12">
+					<h2>你担心的，交给我们。</h2>
+					<h5>透明</h5>
+					<p>
+						你所期待的，亦是我们看重的。<br>
+						我们在币看进行算力公示，当前算力
+						<span>127,168 T/S</span>
+					</p>
+					<h5>保护</h5>
+					<p>
+						安全是好比特币的根基，我们十分重视用户资产的安全。为此筹备了
+						<a href="/common/oath" target="about_blank">HSM（硬件加密）</a>，<br>
+						冷热钱包隔离，以及全方位的保护措施。<br>捍卫你的资产，一如我们捍卫使用比特币的自由。
+					</p>
+					<h5>信任</h5>
+					<p>
+						点滴信任，汇成江河。<br>
+						<a href="common/about-us" target="about_blank">好比特币团队</a>
+						来自微软/百度/美团/豆瓣等知名互联网公司，从Openblock开源到如今稳定运行逾两年。<br>
+						用户的信赖来之不易，我们倍加珍惜，拥抱创新。
+					</p>
+					<a class="btn security-intro-btn" href="#" target="_blank">
+						进一步了解
+						<i class="fa fa-arrow-right"></i>
+					</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 hidden-xs">
+				<div class="col-md-8 security-pricebar">
+					<div class="security-pricebar-body">
+						<p>当前买价</p>
+						<h3>
+							￥
+							<span class="index-pricebar-buy">7148.00</span>
+								/ BTC
+						</h3>
+						<p>当前买价</p>
+						<h3>
+							￥
+							<span class="index-pricebar-sell">7024.00</span>
+							/ BTC
+						</h3>
+						<p>来源:好比特币标准价格</p>
+					</div>
+					<div class="security-pricebar-footer">
+						<p>
+							<a href="#" target="_blank">进一步了解好比特标准价格</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 浮动背景 -->
+		<div class="site-flow-bg hidden-xs ">
+			<div class="site-flow-bg-content"></div>
+		</div>
+		<!-- 产品介绍 -->
+		<div class="site-product-intro container-fluid hidden-xs">
+			<div class="product-wrap container">
+				<div class="product-header">
+					<h3 class="text-center">您的信任，成就一切。</h3>
+				</div>
+				<div class="product-body row">
+					<div class="product-content col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/produce_content1.png" alt="btc团队" width="120" />
+							<p>好比特币团队</p>
+						</a>
+					</div>
+					<div class="product-content col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/produce_content2.png" alt="安全技术" width="120"/>
+							<p>了解我们的安全技术</p>
+						</a>
+					</div>
+					<div class="product-content col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/produce_content3.png" alt="矿业" width="120"/>
+							<p>好比特币矿业</p>
+						</a>
+					</div>
+					<div class="product-content col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/produce_content4.png" alt="价值观" width="120"/>
+							<p>比特币价值观</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 用户评价 -->
+		<div class="site-comments container-fluid">
+			<div class="comments-warp container">
+				<div class="row">
+					<div class="comments-content col-md-6">
+						<div class="col-sm-4 col-xs-12">
+							<img src="img/comments_gtzhou.png" alt="clients-gtzhou"/>
+						</div>
+						<div class="comments-content-decs col-sm-8 col-xs-12">
+							<p>我建议所有的高净值人士，都应该换一些比特币屯着。只要不超过金融资产的5%，风险完全可控，但是带来的回报不仅仅是金钱上的，而是完全的自由。这是一场伟大的金融冒险，却无关乎金钱。多一枚比特币，多一份自由，我信赖haobtc。
+							</p>
+							<p>GT周
+								<a href="#">@GT周</a>
+							</p>
+							&#8203;
+						</div>
+					</div>
+					<div class="comments-content col-md-6">
+						<div class="col-sm-4 col-xs-12">
+							<img src="img/comment_dahongfei.png" alt="clients-dahongfei"/>
+						</div>
+						<div class="comments-content-decs col-sm-8 col-xs-12">
+							<p>把币存在haobtc我还是挺放心的，一来熟悉老板星空吴钢的品性，二来以币挖矿的盈利模式也比较可靠可持续。查了下自己的账户，利息足足收了十多个币了，5分好评。如果你觉得个人资产里配置一些黄金是个不错的主意，那么你应该至少配置等价的比特币，反正我已经这么干了。
+							</p>
+							<p>达洪飞
+								<a href="#">@达洪飞</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 媒体报道 -->
+		<div class="site-mediaReports container-fluid">
+			<div class="mediaReports-wrap container">
+				<div class="col-md-4">
+					<div class="mediaReports-content">
+						<p>
+							"If the consensus is implemented successfully, it will set an example for future collaborations between all parties," said Wu Gang, chief executive officer of HaoBTC, which accounts for about five percent of the computing power used to verify bitcoin transactions.
+						</p>
+						<a href="#">
+							了解更多
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					<a class="mediaReports-media" href="#">
+						<i class="fa fa-newspaper-o"></i>
+						Bloomberg彭博 
+					</a>
+				</div>
+				<div class="col-md-4">
+					<div class="mediaReports-content">
+						<p>
+							"If the consensus is implemented successfully, it will set an example for future collaborations between all parties," said Wu Gang, chief executive officer of HaoBTC, which accounts for about five percent of the computing power used to verify bitcoin transactions.
+						</p>
+						<a href="#">
+							了解更多
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					<a class="mediaReports-media" href="#">
+						<i class="fa fa-newspaper-o"></i>
+						The Washington Post华盛顿邮报 
+					</a>
+				</div>
+				<div class="col-md-4">
+					<div class="mediaReports-content">
+						<p>
+							仮想通貨ビットコインの人気が再燃している。その中核の技術を活用する動きも急速に広まっている。円やドルとは違う「新通貨」を巡り、世界で何が起こっているのか。
+						</p>
+						<a href="#">
+							了解更多
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					<a class="mediaReports-media" href="#">
+						<i class="fa fa-newspaper-o"></i>
+						Asahi Shimbun朝日新闻
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 联系方式 -->
+		<div class="site-contact container">
+			<div class="contact-wrap row">
+				<div class="contact-head col-md-12">
+					<img src="img/contact_help.png" class="center-block" alt="contact help" width="120" />
+					<p class="contact-desc text-center">
+						建议您使用在线客服系统提交问题，以获得最快的帮助。
+						<a  href="#">
+							登录并使用在线客服系统 
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</p>
+				</div>
+				<div class="contact-content">
+					<div class="col-md-3 col-xs-6">
+						<img class="center-block" src="img/contact_qq.png" alt="QQ" width="80" />
+						<p class="text-center">
+							联系客服QQ
+						</p>
+						<p class="text-center">
+							<a href="#">
+								4006611168
+							</a>
+						</p>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<img class="center-block" src="img/contact_tel.png" alt="tel" width="80"/>
+						<p class="text-center">
+							致电haobtc
+						</p>
+						<p class="text-center">
+							400-6611-168
+						</p>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<img class="center-block" src="img/contact-mail.png" alt="mail" width="80"/>
+						<p class="text-center">
+							通过邮件与我们联系
+						</p>
+						<p class="text-center">
+								support@haobtc.com
+						</p>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<img class="center-block" src="img/contact-talk.png" alt="talk" width="80"/>
+						<p class="text-center">
+							加入QQ讨论组
+						</p>
+						<p class="text-center">
+							<a href="#">
+								127290146
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部注册 -->
+		<div class="site-register container-fluid">
+			<p class="text-center">全新比特币钱包体验，好比特币帮助你成就更多可能</p>
+			<a class="register-btn btn btn-lg" href="#">
+				立即免费注册
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		<!-- 友情链接 -->
+		<div class="site-links hidden-xs ">
+			<div class="container">
+				<div class="links-head">
+					<h3 class="text-center">友情链接</h3>
+				</div>           
+				<div class="links-body">
+					<span class="links-content">
+						<a href="#">比特币钱包</a>
+					</span>
+					<span class="links-content">
+						<a href="#">比特时代</a>
+					</span>
+					<span class="links-content">
+						<a href="#">投资导航网</a>
+					</span>
+					<span class="links-content">
+						<a href="#">BTC.COM</a>
+					</span>
+					<span class="links-content">
+						<a href="#">大智慧公式</a>
+					</span>
+					<span class="links-content">
+						<a href="#">长江联合</a>
+					</span>
+					<span class="links-content">
+						<a href="#">汇友网</a>
+					</span>
+					<span class="links-content">
+						<a href="#">比特币资讯网</a>
+					</span>
+					<span class="links-content">
+						<a href="#">比特大陆</a>
+					</span>
+					<span class="links-content">
+						<a href="#">币科技</a>
+					</span>         
+					<span class="links-content">
+						<a href="#">比巴克</a>
+					</span>
+					<span class="links-content">
+						<a href="#">sosobtc</a>
+					</span>
+					<span class="links-content">
+						<a href="#">融e邦众筹</a>
+					</span>
+					<span class="links-content">
+						<a href="#">指标公式</a>
+					</span>
+					<span class="links-content">
+						<a href="#">同花顺公式网</a>
+					</span>
+					<span class="links-content">
+						<a href="#">原油投资网</a>
+					</span>
+					<span class="links-content">
+						<a href="#">北京装修论坛</a>
+					</span>
+					<span class="links-content">
+						<a href="#">网贷门户</a>
+					</span>
+					<span class="links-content">
+						<a href="#">比特币交易</a>
+					</span>     
+					<span class="links-content">
+						<a href="#">比特币家园</a>
+					</span>
+					<span class="links-content">
+						<a href="#">贷款知识</a>
+					</span>
+					<span class="links-content">
+						<a href="#">比特币挖矿</a>
+					</span>
+					<span class="links-content">
+						<a href="#">蚂蚁矿池</a>
+					</span>
+					<span class="links-content">
+						<a href="#">数字货币</a>
+					</span>
+					<span class="links-content">
+						<a href="#">比特币</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- 论坛入口 -->
+		<div class="fixed-forum">
+			<a href="#">
+				<img src="img/fixed_forum.png" alt="官方论坛" width="30" / >
+			</a>
+		</div>
+		<!-- 帮助入口 -->
+		<div class="fixed-help-panel hidden-xs">
+			<div class="help-panel-head">
+				<p>
+					<i class="fa fa-question-circle"></i>
+					需要帮助?
+				</p>
+			</div>
+			<ul class="help-panel-body">
+				<li>
+					<a href="#">
+						<figure class="support support-online"></figure>
+						在线客服（推荐）
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<figure class="support support-qq"></figure>
+						QQ客户服务
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<figure class="support support-tel"></figure>
+						<code>400-6611-168</code>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- footer -->
+		<div class="common-footer container">
+			<div class="footer-wrap row">
+				<div class="footer-logo col-md-2 col-xs-12">
+					<img src="img/footer-logo.png" alt="logo" width="130px" />
+				</div>
+				<div class="footer-content col-md-2 col-xs-6">
+					<dl>
+						<dt>好比特币</dt>
+						<dd>
+							<a href="#">关于我们</a>
+						</dd>
+						<dd>
+							<a href="#">媒体</a>
+						</dd>
+						<dd>
+							<a href="#">标志</a>
+						</dd>
+						<dd>
+							<a href="#">加入我们</a>
+							<span class="badge badge-blue">正在招聘</span>
+						</dd>
+					</dl>
+				</div>
+				<div class="footer-content col-md-2 col-xs-6">
+					<dl>
+						<dt>产品</dt>
+						<dd>
+							<a href="#">钱包</a>
+						</dd>
+						<dd>
+							<a href="#">矿产</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="footer-content col-md-2 col-xs-6">
+					<dl>
+						<dt>服务</dt>
+						<dd>
+							<a href="#">区块浏览器</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="footer-content col-md-2 col-xs-6">
+					<dl>
+						<dt>帮助</dt>
+						<dd>
+							<a href="#">网站费率</a>
+						</dd>
+						<dd>
+							<a href="#">在线客服</a>
+						</dd>
+						<dd>
+							<a href="#">最新公告</a>
+						</dd>
+						<dd>
+							<a href="#">常见问题</a>
+						</dd>
+						<dd>
+							<a href="#">联系我们</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="footer-contact col-md-2 col-xs-6 text-center hidden-xs">
+					<img src="img/weixin-pop.jpg" alt="官方微信" width="120px" />
+					<p>
+						<a class="content-link" href="#" title="官方微博">
+							<i class="fa fa-weibo"></i>
+						</a>
+						<a class="content-link" href="#" title="官方推特">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</p>
+				</div>
+				<div class="col-xs-12">入市有风险 投资需谨慎</div>
+				<div class="footer-ft col-sm-12 hidden-xs">
+					<p>
+						<span>电话:(+86)400-6611-168</span>
+						<span>邮箱:support@haobtc.com</span>
+						<span>北京市海淀区天创科技大厦 607A </span>
+						<span>商务合作: wgg@haobtc.com</span>
+					</p>
+					<p>
+						2016 © Beijing Inevitable Network Technologies Co., Ltd.
+						<a href="#">使用条款</a>
+						<a href="#">隐私条款</a>
+						<select class="select-lang">
+							<option value="zh-hans">中文</option>
+							<option value="en" disabled>ENG</option>
+							<option value="ru" disabled>RUS</option>
+						</select>
+					</p>
+					<p>
+						京ICP备 14062004号-1
+						<span style="margin-left:5px">|</span>
+						<a href="#">
+							<img src="img/police.png">
+							京公网安备 11010802021991号
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>	
+		<!-- footer -->
+	</body>
+</html>
